@@ -1,0 +1,224 @@
+.navbar-light .navbar-brand {
+    font-size: 20px;
+    color: #000
+}
+
+#nav-buttons {
+    height: 40px
+}
+
+#navcol-1 {
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    padding-right: 0
+}
+
+#about-us {
+    margin-left: 20px
+}
+
+#top-views h1 {
+    color: #fff;
+    font-size: 32px
+}
+
+.col-md-4.top-view-algo {
+    text-align: center;
+    border: 1px solid #fff
+}
+
+#algo-caption {
+    font-size: 32px
+}
+
+#top-view {
+    padding: 12px 8px
+}
+
+#top-view-algo-col {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px
+}
+
+.top-view h1 {
+    margin-bottom: 120px
+}
+
+#top-view-h {
+    padding-left: 32px;
+    margin-bottom: 24px
+}
+
+#explore {
+    padding-right: 8px;
+    padding-left: 8px
+}
+
+.icon.ion-ios-arrow-right {
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+#explore-h {
+    padding: 8px
+}
+
+#explore-algo-h {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #1b1919;
+    color: var(--light);
+    margin-bottom: 0
+}
+
+#explore-algo,#top-view-algo {
+    display: block
+}
+
+#top-view-algo:hover {
+    background: #000;
+    box-shadow: 1px 1px 16px 2px #fff;
+    border-radius: 8px
+}
+
+#explore-algo:hover {
+    background: #000;
+    box-shadow: 1px 1px 16px 2px #fff;
+    border-radius: 8px;
+    text-decoration: none
+}
+
+#explore-algo .card-img-overlay {
+    opacity: 0
+}
+
+#explore-algo:hover .card-img-overlay {
+    opacity: 1
+}
+
+#explore-algo:hover .card-img {
+    opacity: .15
+}
+
+.card-img {
+    backface-visibility: hidden;
+    transition: 1s;
+    display: block;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 260px
+}
+
+#para {
+    transition: 1s;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    padding: 4px 8px
+}
+
+#top-view-algo-h {
+    font-size: 32px;
+    text-align: center
+}
+
+#hamburger-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,193,07, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
+
+#welcome-section {
+    width: 100%;
+    height: 50vh
+}
+
+@media (min-width: 576px) {
+    .navbar-light .navbar-brand {
+        padding-left:0;
+        font-size: 24px;
+        color: #000
+    }
+
+    #navcol-1 {
+        font-size: 16px;
+        font-family: Montserrat,sans-serif;
+        font-weight: 600
+    }
+
+    #explore {
+        padding: 20px 40px
+    }
+
+    #welcome-section {
+        width: 100%;
+        height: 100vh
+    }
+}
+
+#explore-list-col {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-brand {
+        padding-left:32px;
+        font-size: 30px;
+        color: #000
+    }
+
+    #navcol-1 {
+        font-size: 20px;
+        font-family: Montserrat,sans-serif;
+        font-weight: 600;
+        padding-right: 32px
+    }
+
+    .card-img {
+        display: block;
+        backface-visibility: hidden;
+        transition: 1s;
+        width: 100%;
+        height: 420px
+    }
+
+    #para {
+        font-size: 32px;
+        font-weight: 500
+    }
+
+    #welcome-section {
+        width: 100%;
+        height: 50vh
+    }
+
+    #explore-list-col {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 0 45px
+    }
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding-right:60px;
+        padding-left: 60px
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding-right:100px;
+        padding-left: 100px
+    }
+}

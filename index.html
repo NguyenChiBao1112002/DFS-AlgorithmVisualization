@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <title>DFS</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"><link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"><link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"><link
+            rel="stylesheet"
+            href="styles.min.css"><link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"><link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"><link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    
+
+    <body
+        style="background: rgb(23,24,24);">
+            <div class="container-fluid" id="tieu_de">
+                <p>Depth-First Search Visualization</p>
+                <p id="author">Author: Nguyen Chi Bao - B2012178</p>
+            </div>
+        <div id="data-div"
+             data="{&quot;jsFiles&quot;:[&quot;sketch.js&quot;,&quot;vertex.js&quot;]}"></div>
+        
+        <div class="container-fluid" id="khung_chin">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-7">
+                    <div class="container" id="buttonsBeforeCanvas">
+                        <span id="frame_Rate">Speed: x2</span>
+                        <input type="range" min="1" max="10" value="2" id="simulator_speed">
+                    </div> 
+                    <div id="canvas">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="code_a_step">
+                        <p id="content_code_a_step">Specific information</p>
+                    </div>
+                    <div id="codetrace" class="panel" >
+                        <p id="code1" >DFS(u, visited, graph)</p>
+                        <p id="code1-1" >&nbsp;&nbsp;&nbsp;u.visited = true (color the vertex u)</p>
+                        <p id="code2" >&nbsp;&nbsp;&nbsp;if u is the target vertex, found, exit</p>
+                        <p id="code3" >&nbsp;&nbsp;&nbsp;for (let v of graph[u])</p>
+                        <p id="code4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!visited[v])</p>
+                        <p id="code5" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DFS(v, visited, graph);</p>
+                        <p id="code7" ></p>
+                    </div>
+
+                    <div id="data-content">
+                        <p id="output">Output</p>
+
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="container
+            mobile-view"><h4> Mobile version of visualization is coming soon</h4><h4>
+                Please open it in bigger screen device </h4></div>
+                <script>// this script is writter to prevent unnecessary download of scripts
+    const data = JSON.parse(document.getElementById("data-div").attributes.data.nodeValue);
+    if(window.innerWidth>=992){
+    data.jsFiles.forEach((js)=>{document.write(`<script type="text/javascript" src="${js}"><\/script>`);  })
+    }
+
+    //const data2 = (document.getElementById("text-div").attributes.data.nodeValue);
+    //document.write('<div class="container algo-dscp-markdown">aaaaaaaaaaaa</div>');
+    </script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script><script
+            src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script
+            src="script.min.js"></script><script
+            src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script><script
+            src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script><script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyA35MmJ8pRZ-LGbu8tmZCjWpJyFfA5Ewo4",
+        authDomain: "visualizing-algorithms.firebaseapp.com",
+        projectId: "visualizing-algorithms",
+        storageBucket: "visualizing-algorithms.appspot.com",
+        messagingSenderId: "842063073053",
+        appId: "1:842063073053:web:d1f0ea1f6a60cc8b2b1bf4",
+        measurementId: "G-QBEE73MKRE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();</script>
+    </body>
+</html>
